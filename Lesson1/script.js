@@ -1,10 +1,18 @@
-var name = prompt('Hello! What is your name');
-alert('Ok, ' + name);
+let budget = prompt("What is your budget?");
+let name = prompt("The name of your shop?");
 
-var budget = prompt('Please tell us what is your budget?');
-alert('Good');
+let mainList = {
+	money: budget,
+	shopName: name,
+	shopGoods: [],
+	employeers: {},
+	open: false 
+}
 
-alert('Now write in the form your daily earnings and expenses and we try to optimize your budget');
+mainList.shopGoods[0] = prompt('What kind of goods do you want to sell?');
+mainList.shopGoods[1] = prompt('What kind of goods do you want to seel?');
+mainList.shopGoods[2] = prompt('What kind of goods do you want to sell?');
 
+alert(mainList.money / 30);
 
 
